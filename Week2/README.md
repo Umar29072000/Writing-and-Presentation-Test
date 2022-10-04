@@ -1,8 +1,7 @@
-# Writin-and-Presentation-Test
+# Writing-and-Presentation-Test
 Tugas-Writing-Week2
 
-## Day 1 : **JavaScript Dasar**
-### **JavaScript Introduction**
+### **JavaScript Dasar**
 - **Javascript** merupakan bahasa pemrograman yang digunakan untuk membuat suatu website menjadi **interaktif**
 - Cara menjalankan javascript adalah melalui berbagai browser. Namun mozilla dan google chrome merupakan browser yang paling umum digunakan. 
 - Pada Javascript dikenal dengan istilah **Syntax** dan **Statement**
@@ -28,7 +27,7 @@ Ada 6 macam tipe data fundamaental pada javascript yaitu :
 - **Variabel** merupakan wadah atau tempat untuk menyimpan sebuah nilai
 3 hal yang dapat dilakukan pada variabel:
   - variabel harus dibuat dengan nama yang jelas dan menggabarkan tentang data tersebut
-  - variabel dapat menimpan dan mengupdate informasi data yang disimpan
+  - variabel dapat menyimpan dan mengupdate informasi data yang disimpan
   - variabel digunakan untuk menampilkan atau mendapatkan data yang tersimpan
 - Ada 3 cara untuk mendefinisikan variabel yaitu :
   - var
@@ -40,7 +39,7 @@ Ada 6 macam tipe data fundamaental pada javascript yaitu :
   - Menggunakan camelcase untuk nama variabel yg lebih dari 1 kata
 - **Operator**
 - **Assignment Operator (=)** digunakan untuk menyimpan sebuah nilai pada variabel
- contohnya : `` let myName = 'Chaca'``
+ contohnya : `` let myName = 'Umar'``
 - **Mathematical Assignment Operator**
 - contohnya : 
   ```
@@ -79,13 +78,13 @@ Ada 6 macam tipe data fundamaental pada javascript yaitu :
 - Contoh Conditional
 - IF Statement
 - contoh conditional **if statement** :
-  - Jika cuaca hari ini cerah, maka kita akan pergi keluar
+  - Jika ini hari senin, maka kita akan upacara bendera merah putih
   - jika saya lapar, maka saya makan
 - contoh if statement 
   ```
-  let nilai = 10;
-  if (nilai === 10){
-    console.log('variabel nilai yang disimpan adalah benar 10');
+  let nilai = 50;
+  if (nilai === 50){
+    console.log('variabel nilai yang disimpan adalah benar 50');
   }
   ```
 - IF ... ELSE Statement
@@ -117,17 +116,17 @@ Ada 6 macam tipe data fundamaental pada javascript yaitu :
 - contoh conditional **switch case**
 
   ```
-	let warna = "kuning";
+	let warna = "oren";
  
 		switch (warna){
-			case "hitam":
-				console.log ("warna hitam");
+			case "abu":
+				console.log ("warna abu");
 				break;
-			case "merah":
-				console.log ("warna merah");
+			case "ungu":
+				console.log ("warna ungu");
 				break;
-			case "hijau":
-				console.log ("warna hijau");
+			case "putih":
+				console.log ("warna putih");
 				break;
 			default:
 			    console.log ("warna tidak terdeteksi");
@@ -180,7 +179,7 @@ Menentukan suatu variabel apakah bisa diakses pada scope atau tidak.
 - Scope ada 2 macam yaitu global scope dan local scope
 - contoh global scope :
 ```
-    let myName = "chaca" ; 
+    let myName = "Umar" ; 
     function greeting()
         return myName;
     {
@@ -239,9 +238,17 @@ function calculateArea(width,height){
 ```
 
 ### Data Type
+- Data Type / tipe data adalah  klasifikasi yang digunakan untuk menentukan nilai dari suatu variabel dalam tipe operasi matematika, hubungan relasional, maupun logika
+- Jenis type data 
+  - Integer adalah bilangan bulat contohnya -1,0,1,2,3
+  - Floating point adalah bilangan desimal contohnya -1,3 1,5
+  - Char adalah Huruf, angka, tanda baca, simbol, maupun spasi kosong contohnya A, D, 4, -, #
+  - Bolean adalah untuk menentukan benar atau salah contohnya true or false 
+  - Array adalah Elemen dari urutan tertentu contohnya 0, 1, 2
+  - String adalah Angka, simbol, karakter, dll dinilai sebagai teks contoh “Hello, world!”, “Sembilan10”
 
 ### **DOM HTML**
-- DOM merupakan cara memanipulasi html agar website lebih dinamis dan interaktif
+- DOM adalah dokumen (HTML) yang dimodelkan dalam sebuah objek.Objek dari dokumen ini menyediakan sekumpulan fungsi dan atribut/data yang bisa kita manfaatkan dalam membuat program Javascript.
 - Cara memanggil DOM Value yaitu :
   - Memanggil tag HTML berdasarkan ID
   `` console.log(document.getElementByID("header))``
@@ -306,13 +313,13 @@ function calculateArea(width,height){
     ```
 - EventListener - Blur : event dimana sebuah element kehilangan fokus dari user 
 - Contoh EventListener - Blur <br />
-  Misalkan saat ingin memvalidasi isi dari ``<input id = "username" />`` agar panjangnya minimal 6 karakter
+  Misalkan saat ingin memvalidasi isi dari ``<input id = "password" />`` agar panjangnya minimal 10 karakter
 
-  `` const input = document.getElementById("username") ``
+  `` const input = document.getElementById("password") ``
 
   ```
   input.addEventListener("blur", () => {
-    if(input.value.length < 6) alert("Panjang username minimal 6")
+    if(input.value.length < 6) alert("Panjang password minimal 10")
   })
   ```
 - EventListener - Form Submission

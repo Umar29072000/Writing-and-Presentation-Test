@@ -143,7 +143,6 @@ Tugas-Writing-Week3
     });
     console.table(inventory);
     ```
-   ![map array]
 - Looping pada Multidimensional array
     ```
     let inventory = [
@@ -158,7 +157,6 @@ Tugas-Writing-Week3
         });
     });
     ```
-    ![foreach array]
     
 ### **JavaScript Object**
 - Object adalah benda mati maupun benda hidup adalah object.

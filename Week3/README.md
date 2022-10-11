@@ -13,7 +13,7 @@ Tugas-Writing-Week3
   - Membuat Array : Array didefinisikan dengan square brackets []
   - Mengakses Array : Array pada javascript dihitung mulai dari index ke- 0 
 ``` 
-   Let randomData = ['ini string', 10, true];
+   Let randomData = ['ini adalah string', 10, true];
    console.log(randomData[1]); //Output : 10
 ```
   - Update Array 
